@@ -581,5 +581,13 @@ def init_hooks(
         console.print(f"[bold green]✔[/bold green] {msg}")
 
 
+@app.command(name="version")
+def version_command() -> None:
+    """Print ContractHub version and exit."""
+    console.print(
+        f"[bold cyan]ContractHub[/bold cyan] version [bold white]{__version__}[/bold white]"
+    )
+
+
 if __name__ == "__main__":
     app()

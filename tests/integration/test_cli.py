@@ -15,6 +15,14 @@ def test_cli_version():
     assert result.exit_code == 0
     assert "ContractHub version" in result.output
 
+    result_short = runner.invoke(app, ["-v"])
+    assert result_short.exit_code == 0
+    assert "ContractHub version" in result_short.output
+
+    result_subcmd = runner.invoke(app, ["version"])
+    assert result_subcmd.exit_code == 0
+    assert "ContractHub version" in result_subcmd.output
+
 
 def test_cli_diff_compatible():
     base = str(EXAMPLES_DIR / "order_v1.proto")

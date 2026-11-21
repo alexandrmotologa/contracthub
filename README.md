@@ -23,7 +23,7 @@ ContractHub is a schema registry and breaking change linter for Protocol Buffers
 ContractHub also exposes a wire-compatible API for Confluent Schema Registry clients, so Kafka producers and consumers can register and fetch schemas without code changes.
 
 <p align="center">
-  <img src="docs/images/studio_overview.png" alt="ContractHub Web Diff Studio" width="100%">
+  <img src="docs/images/contracthub_demo.gif" alt="ContractHub Interactive Demo" width="100%" />
 </p>
 
 ## Features

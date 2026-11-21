@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "contracthub"
-version = "0.1.0"
+version = "0.1.1"
 description = "Universal schema registry and breaking change linter for Protobuf, OpenAPI, and JSON Schema."
 readme = "README.md"
 authors = [
@@ -50,3 +50,4 @@ ignore = ["B008"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
